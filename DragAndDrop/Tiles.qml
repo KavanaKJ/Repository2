@@ -20,7 +20,7 @@ Item {
                     text: index
                     anchors.centerIn: parent
                     color: "white"
-                    font.pixelSize: 15
+                    font.pixelSize: 20
                 }
                 Drag.active: mouseArea.drag.active
                             Drag.hotSpot.x: 10
