@@ -29,15 +29,11 @@ Item {
                 states: [
                     State {
                         when: mouseArea.drag.active
-                        ParentChange { target: rect; parent: item }
-                        
+                        ParentChange { target: rect; parent: item }                        
                     }
                 ]
             }
-
         }
-   
-
     }
 
 
