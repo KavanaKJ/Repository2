@@ -10,7 +10,6 @@ Item {
         drag.target: rect
         onReleased: {
             parent = rect.Drag.target !== null ? rect.Drag.target : item
-            rect.Drag.drop()
         }
             Rectangle {
                 id:rect
