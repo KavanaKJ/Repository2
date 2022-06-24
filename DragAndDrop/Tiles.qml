@@ -10,7 +10,6 @@ Item {
         drag.target: rect
         onReleased: {
             parent = rect.Drag.target !== null ? rect.Drag.target : item
-            rect.Drag.drop()
         }
             Rectangle {
                 id:rect
@@ -29,7 +28,11 @@ Item {
                 states: [
                     State {
                         when: mouseArea.drag.active
+<<<<<<< HEAD
                         ParentChange { target: rect; parent: item }
+=======
+                        ParentChange { target: rect; parent: item }                        
+>>>>>>> 39a9c39397280d9fa407e49cecefa65fa2092129
                     }
                 ]
             }
