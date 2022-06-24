@@ -30,19 +30,10 @@ Item {
                     State {
                         when: mouseArea.drag.active
                         ParentChange { target: rect; parent: item }
-                        AnchorChanges { target: rect; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
                     }
                 ]
             }
-
         }
-    Component.onCompleted: {
-       console.log("rect created")
-    }
-    Component.onDestruction: {
-        console.log("rect deleted")
-    }
-
     }
 
 
